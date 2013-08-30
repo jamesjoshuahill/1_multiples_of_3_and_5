@@ -17,7 +17,7 @@ class Multiples3and5
   end
 
   def multiples_of_3_or_5
-    1.upto(@n).select { |n| n if multiple_of_3_or_5?(n) }
+    (1...@n).select { |n| n if multiple_of_3_or_5?(n) }
   end
 
   def sum_of_multiples_of_3_or_5
