@@ -4,6 +4,11 @@ describe Multiples3and5 do
   let(:multiple_10) { Multiples3and5.new(10) }
   let(:multiple_5) { Multiples3and5.new(5) }
 
+  it 'should only accept an integer as the argument' do
+    expect { Multiples3and5.new }.to raise_error(ArgumentError)
+    expect { Multiples3and5.new([]) }.to raise_error(ArgumentError)
+  end
+
   # it 'should know if a number is a multiple of 3' do
   #   expect(multiple_10.multiple_of_3?(3)).to be_true
   # end

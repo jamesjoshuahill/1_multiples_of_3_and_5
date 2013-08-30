@@ -1,5 +1,6 @@
 class Multiples3and5
   def initialize(n)
+    raise ArgumentError.new("Argument must be an integer") if n.class != Fixnum
     @n = n
   end
 
