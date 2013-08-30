@@ -20,6 +20,11 @@ describe Multiples3and5 do
     expect(multiple_10.multiple_of_5?(1)).to be_false
   end
 
+  it 'should know if a number is a multiple of 3 or 5' do
+    expect(multiple_10.multiple_of_3_or_5?(3)).to be_true
+    expect(multiple_10.multiple_of_3_or_5?(5)).to be_true
+  end
+
   it 'should list the multiples of 3 or 5 up to the given number' do
     expect(multiple_10.multiples_of_3_or_5).to eq [3, 5, 6, 9, 10]
     expect(multiple_5.multiples_of_3_or_5).to eq [3, 5]

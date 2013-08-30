@@ -11,8 +11,12 @@ class Multiples3and5
     n % 5 == 0
   end
 
+  def multiple_of_3_or_5?(n)
+    multiple_of_3?(n) || multiple_of_5?(n)
+  end
+
   def multiples_of_3_or_5
-    1.upto(@n).select { |n| n if multiple_of_3?(n) || multiple_of_5?(n) }
+    1.upto(@n).select { |n| n if multiple_of_3_or_5?(n) }
   end
 
   def sum_of_multiples_of_3_or_5
