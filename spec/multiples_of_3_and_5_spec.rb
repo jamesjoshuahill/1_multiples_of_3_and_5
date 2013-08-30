@@ -4,21 +4,21 @@ describe Multiples3and5 do
   let(:multiple_10) { Multiples3and5.new(10) }
   let(:multiple_5) { Multiples3and5.new(5) }
 
-  it 'should know if a number is a multiple of 3' do
-    expect(multiple_10.multiple_of_3?(3)).to be_true
-  end
+  # it 'should know if a number is a multiple of 3' do
+  #   expect(multiple_10.multiple_of_3?(3)).to be_true
+  # end
 
-  it 'should know if a number is NOT a multiple of 3' do
-    expect(multiple_10.multiple_of_3?(1)).to be_false
-  end
+  # it 'should know if a number is NOT a multiple of 3' do
+  #   expect(multiple_10.multiple_of_3?(1)).to be_false
+  # end
 
-  it 'should know if a number is a multiple of 5' do
-    expect(multiple_10.multiple_of_5?(5)).to be_true
-  end
+  # it 'should know if a number is a multiple of 5' do
+  #   expect(multiple_10.multiple_of_5?(5)).to be_true
+  # end
 
-  it 'should know if a number is NOT a multiple of 5' do
-    expect(multiple_10.multiple_of_5?(1)).to be_false
-  end
+  # it 'should know if a number is NOT a multiple of 5' do
+  #   expect(multiple_10.multiple_of_5?(1)).to be_false
+  # end
 
   it 'should know if a number is a multiple of 3 or 5' do
     expect(multiple_10.multiple_of_3_or_5?(3)).to be_true
