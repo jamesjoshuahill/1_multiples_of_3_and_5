@@ -1,4 +1,5 @@
-multiples_of_3_and_5
+Multiples of 3 and 5
 ====================
 
-Project Euler problem 1
+Solution to Project Euler problem 1 in Ruby.
+http://projecteuler.net/problem=1
