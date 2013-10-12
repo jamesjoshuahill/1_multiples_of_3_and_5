@@ -4,14 +4,6 @@ class Multiples3and5
     @n = n
   end
 
-  # def multiple_of_3?(n)
-  #   n % 3 == 0
-  # end
-
-  # def multiple_of_5?(n)
-  #   n % 5 == 0
-  # end
-
   def multiple_of_3_or_5?(n)
     n % 3 == 0 || n % 5 == 0
   end
